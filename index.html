@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luckora | Roll the Dice</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">🎲 luckora.</a>
+        <nav>
+            <a href="#roll">Roll</a>
+            <a href="#history">History</a>
+            <a href="#stats">Stats</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <p class="eyebrow">LET CHANCE DECIDE</p>
+            <h1>A little luck, <span>a lot of fun.</span></h1>
+            <p>One roll can change the story.</p>
+        </section>
+
+        <section class="dice-card" id="roll">
+
+            <div class="card-top">
+                <span class="status-dot"></span>
+                <span>READY TO ROLL</span>
+                <span class="roll-count" id="rollCount">0 rolls</span>
+            </div>
+
+            <div class="dice-area">
+                <div class="die" id="die1">1</div>
+                <div class="die hidden" id="die2">1</div>
+            </div>
+
+            <div class="result">
+                <p class="result-label" id="resultLabel">YOUR RESULT</p>
+                <h2 id="total">—</h2>
+                <p id="resultMessage">Ready when you are.</p>
+            </div>
+
+            <div class="controls">
+                <button class="roll-button" id="rollOne">
+                    🎲 Roll one die <span>→</span>
+                </button>
+                <button class="roll-button secondary" id="rollTwo">
+                    🎲 Roll two dice <span>→</span>
+                </button>
+            </div>
+
+            <p class="hint">ⓘ Each die has six equally likely outcomes.</p>
+        </section>
+
+        <section class="stats-grid" id="stats">
+            <div class="stat-card">
+                <div class="stat-icon">🎲</div>
+                <div>
+                    <p>TOTAL ROLLS</p>
+                    <h3 id="statRolls">0</h3>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">📊</div>
+                <div>
+                    <p>AVERAGE TOTAL</p>
+                    <h3 id="statAverage">—</h3>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">🏆</div>
+                <div>
+                    <p>HIGHEST TOTAL</p>
+                    <h3 id="statHighest">—</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="history-section" id="history">
+            <div class="section-heading">
+                <h2>Roll history</h2>
+                <button class="clear-button" id="clearHistory">
+                    Clear history
+                </button>
+            </div>
+
+            <div class="history-list" id="historyList">
+                <p class="empty-state">
+                    No rolls yet. Make your first move!
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Made with curiosity & code.</p>
+            <p>Luckora © 2026</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
